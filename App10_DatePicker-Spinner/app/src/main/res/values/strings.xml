@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">App10_DatePicker-Spinner</string>
+    <string name="txt_Instruccion">Pulse el siguiente botón para escoger la fecha</string>
+    <string name="btm_Escoger">Escoger Fecha</string>
+    <string name="txt_FechaInfo">La fecha es</string>
+    <string name="txt_Fecha">Fecha</string>
+
+    <string name="country_prompt">Escoja un país</string>
+    <string-array name="country_arrays">
+        <item>Ecuador</item>
+        <item>Francia</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>italia</item>
+    </string-array>
+</resources>
