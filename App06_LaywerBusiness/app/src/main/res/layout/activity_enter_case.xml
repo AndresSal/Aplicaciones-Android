@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.laywerbusiness.EnterCaseActivity">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/client_name_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="newRegister"
+        android:text="@string/register_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEndDate"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="321dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ingrese Los datos del nuevo caso "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInitDate"
+        android:layout_width="153dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="25dp"
+        android:onClick="setDateInit"
+        android:text="@string/choose_date_Ini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnState" />
+
+    <TextView
+        android:id="@+id/txtDateViewInit"
+        android:layout_width="105dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/txt_date_viewIni"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnState" />
+
+    <TextView
+        android:id="@+id/txtDateViewEnd"
+        android:layout_width="105dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/txt_date_viewFin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/btnEndDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateViewInit" />
+
+    <Button
+        android:id="@+id/btnEndDate"
+        android:layout_width="153dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="8dp"
+        android:onClick="setDateEnd"
+        android:text="@string/choose_date_End"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInitDate" />
+
+    <Spinner
+        android:id="@+id/spnState"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/states_array"
+        android:prompt="@string/estados"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"/>
+</android.support.constraint.ConstraintLayout>

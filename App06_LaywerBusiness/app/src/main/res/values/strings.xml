@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LaywerBusiness</string>
+    <string name="ingresos_Casos">Ingreso de Casos</string>
+    <string name="consulta_Casos">Consulta de Casos</string>
+    <string name="resultado_busqueda">Resultado de la Búsqueda</string>
+    <string name="register_button">Registrar</string>
+    <string name="client_name_field">Nombre del cliente</string>
+    <string name="state_field">Estado</string>
+    <string name="start_date_field">fecha de inicio</string>
+    <string name="end_date_field">fecha final</string>
+    <string name="consult_button">Consultar</string>
+    <string name="consult_name_field">nombre de consulta</string>
+    <string name="result_Name">resultado nombre</string>
+    <string name="result_start_date">resultado fecha inicio</string>
+    <string name="result_end_date">resultado_fecha_fin</string>
+    <string name="result_state">resultado estado</string>
+    <string name="client_list_button">Ver Lista de Clientes</string>
+    <string name="choose_date_Ini">Escoja fecha Inicial</string>
+    <string name="choose_date_End">Escoja fecha Final</string>
+    <string name="txt_date_viewIni">su fecha inicial</string>
+    <string name="txt_date_viewFin">su fecha final</string>
+    <string name="estados">Escoja una opción</string>
+    <string-array name="states_array">
+        <item>En curso</item>
+        <item>Pendiente de dictamen</item>
+        <item>En apelación</item>
+        <item>Cerrado</item>
+    </string-array>
+</resources>

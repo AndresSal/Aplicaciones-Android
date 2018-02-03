@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.laywerbusiness.ListResultActivity">
+
+    <TextView
+        android:id="@+id/txtResume"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Detalle del cliente"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/txtnameCli"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:text="Nombre"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtInitDateCli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResume" />
+
+    <TextView
+        android:id="@+id/txtInitDateCli"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:text="Fecha Inicio"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEndDateCli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnameCli" />
+
+    <TextView
+        android:id="@+id/txtEndDateCli"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:text="Fecha Final"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtStatusCli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInitDateCli" />
+
+    <TextView
+        android:id="@+id/txtStatusCli"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:text="Estado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEndDateCli" />
+
+    <TextView
+        android:id="@+id/resultName"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultInitDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtnameCli"
+        app:layout_constraintTop_toBottomOf="@+id/txtResume" />
+
+    <TextView
+        android:id="@+id/resultInitDate"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultFinalDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtInitDateCli"
+        app:layout_constraintTop_toBottomOf="@+id/resultName" />
+
+    <TextView
+        android:id="@+id/resultFinalDate"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtEndDateCli"
+        app:layout_constraintTop_toBottomOf="@+id/resultInitDate" />
+
+    <TextView
+        android:id="@+id/resultStatus"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtStatusCli"
+        app:layout_constraintTop_toBottomOf="@+id/resultFinalDate" />
+
+</android.support.constraint.ConstraintLayout>
