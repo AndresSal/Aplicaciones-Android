@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tile"
+    android:orientation="vertical"
     tools:context="com.example.user.laywerbusiness.MainActivity">
 
     <TextView
@@ -16,6 +18,7 @@
         android:layout_marginTop="16dp"
         android:text="Bienvenidos al sistema Expediente de casos"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
