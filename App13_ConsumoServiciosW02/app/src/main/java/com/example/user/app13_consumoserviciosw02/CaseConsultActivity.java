@@ -77,7 +77,7 @@ public class CaseConsultActivity extends AppCompatActivity {
     public void makeRequest3(View view){
         RequestQueue queue = Volley.newRequestQueue(this);
 
-        String url3 ="http://192.168.1.8/contactos.php";
+        String url3 ="http://192.168.1.8/Practica/contactos.php";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url3,
                 new Response.Listener<String>() {
